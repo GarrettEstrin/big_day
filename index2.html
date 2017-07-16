@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="Images/heart-icon.png" />
+
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Our Big Day in SF</title>
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #000000;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 789px;
+	background-color: #FFFFFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header {
+	background-color: #D0D0D0 ;
+}
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the block elements. The elements within these blocks have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the block itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the block element and place a second block element within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a block set to float right). Many times, padding can be used instead. For blocks where this rule must be broken, you should add a "display:inline" declaration to the block element's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar blocks could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the blocks around in the HTML source.
+
+*/
+.sidebar1 {
+	
+	
+	background-color: #000000;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 789px;
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+nav ul{
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+nav li 
+{
+	float: left;
+	text-align: center;
+}
+
+{
+display:block;
+width:100px;
+}
+{
+display:inline;
+}
+{
+	
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+nav a, nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 137.8px;
+	depth: 40px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #D0D0D0 ;
+}
+nav a:hover, nav a:active, nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #FF3366;
+	color: #FFF;
+	text-align: center;
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	background-color: #D0D0D0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	font-size: 90%;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, article, figure {
+	display: block;
+}
+-->
+
+.rsvp {
+	display: block;
+	width: 138px;
+	height: 101px;
+	background: url('rsvp_buttontest.jpg') bottom;
+	text-indent: -99999px;
+}
+.rsvp:hover {
+	background-position: 0 0;
+}
+
+</style><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+
+
+</head>
+
+
+
+<div class="container">
+  <header>
+    <div align="center"><a href="/index.html">
+    <img src="Images/cover.jpg" alt="Insert Logo Here" width="789" height="528" id="Insert_logo" style="background-color: white; display:block;" />
+    </a></div>
+    
+  </header>
+  <div align="center">
+  <body onload="MM_preloadImages('../Documents/Our Big Day in SF/ourbigdayinsf.com/Images/rsvp_button2.jpg','../Documents/Our Big Day in SF/ourbigdayinsf.com/Images/hotel_button2.jpg','../Documents/Our Big Day in SF/ourbigdayinsf.com/Images/reg_button2.jpg','../Documents/Our Big Day in SF/ourbigdayinsf.com/Images/about_button2.jpg','../Documents/Our Big Day in SF/ourbigdayinsf.com/Images/abousft_button2.jpg')">
+  
+<style type="text/css">
+.rollover a {     display : block;
+                     width : 134px;
+                     height : 34px;
+                     background-image:url( 'http://ourbigdayinsf.com/Images/rsvp_button.jpg' ); }
+
+.rollover a:hover { display : block;
+                      width : 134px;
+                      height :34*px;
+                      background-image:url( 'http://ourbigdayinsf.com/Images/rsvp_button2.jpg' ); }
+</style>
+
+<div class="rollover" > <a href="#"></a> </div>
+  
+  </div>
+  <article class="content">
+    <section>
+    <div align="center"> <h2><img src="Images/Hi.jpg"></h2>
+</section>
+    <section>
+    <div align="center">
+      <h2 ID="RSVP"><img src="Images/RSVP.jpg" alt="rsvp" width="730">
+      </h2>
+      <p><form id="form1" name="form1" method="post" action="sendform.php">
+<p>
+  <label for="name"><img src="Images/Name.jpg" width="74" height="31" alt="Name"></label>
+  <p>
+  <input name="name" type="text" id="name" form="form1">
+</p>
+<p><img src="Images/coming.jpg" width="206" height="32" alt="Are you coming?"><p>
+<select name="coming" form="form1">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          <option value="Fuck Yes!">Hell Yeah!
+          </opton>
+        </select></p>
+<p><img src="Images/many.jpg" width="232" height="62" alt="How many peeps are coming? (Including yourself)"><p>
+  <select name="people" form="form1">
+          <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select></p>
+<p>
+  <label for="guest1"><img src="Images/Other.jpg" width="270" height="32" alt="Name of other peeps"><br>
+    <br>
+  </label>
+     <input type="text" name="guest1" id="guest1">
+</p>
+<p><label for="guest2"></label>
+  <input type="text" name="guest2" id="guest2"></p>
+<p><label for="guest3"></label>
+  <input type="text" name="guest3" id="guest3"></p>
+<p>&nbsp;</p>
+<p>
+  <label for="Comments"><img src="Images/note.jpg" width="200" height="32" alt="Leave us a note!"></label>
+<p>
+  <textarea name="comments" id="comments"></textarea>
+</p>
+<p>
+  <input type="submit" name="submit" id="submit" value="Submit">
+</p>
+<p><img src="Images/confirmation.jpg" width="414" height="32" alt="Please wait for confirmation page"></p>
+      </form></p>
+    </section>
+    <section>
+      <section><div align="center">
+     <h2 id="hotel"><img src="Images/hotel.jpg" width="730"></h2>
+    </section>
+    <div align="center"><section>
+      <img src="Images/hotelinfo.jpg" width="732" height="534"></section>
+    <section>
+      
+      <p><script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:600px;"><div id="gmap_canvas" style="height:500px;width:600px;"></div><a class="google-map-code" href="http://www.map-embed.com" id="get-map-data">bonuses</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(37.7834042,-122.40716729999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.7834042, -122.40716729999997)});infowindow = new google.maps.InfoWindow({content:"<b>Hotel Zetta</b><br/>55 5th Street<br/> San Francisco" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></p>
+    </section>
+   
+    <section><div align="center">
+     <h2 id="reg"><img src="Images/registry.jpg" width="730"></h2>
+      <p><a href="http://www.myregistry.com/wedding-registry/Ashley-Garcia-Garrett-Estrin-Chino-CA/614386"><img src="Images/myregistry.jpg" width="204" height="43" align="center"></a></p>
+    </section>
+    <section><div align="center">
+     <h2 id="about"><img src="Images/aboutus.jpg" width="730"></h2>
+      <p>We are bitchen!</p>
+    </section>
+    <section>
+      <h2>Also,</h2>
+      <p>We are trying to get people to say &quot;bitchen&quot; again.</p>
+    </section>
+  <!-- end .content --></article>
+  <footer>
+    <p><font color="white" style="font-size: 10pt">This is where I say that the groom made this without totally looking up any HTML codes or CSS styles or anything...</font></p>
+    <address>
+    </address>
+  </footer>
+<!-- end .container --></div>
+
+</html>
